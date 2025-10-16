@@ -98,7 +98,7 @@ export default function ClaimForm({ onClaimSubmit }: ClaimFormProps) {
 
     // Extract amount
     const amountRegex = /(Total Amt|Nett Sales|Paid|Total|Amount|Amt|Subtotal|Balance)[\s:RM]*(\d+\.\d{2})/gi;
-    const amountMatches = [...text.matchAll(amountRegex)];
+    const amountMatches = Array.from(text.matchAll(amountRegex));
     if (amountMatches.length > 0) {
       const lastMatch = amountMatches[amountMatches.length - 1];
       setAmountRM(parseFloat(lastMatch[2]));
