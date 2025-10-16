@@ -14,7 +14,8 @@
     "react-dom": "^18",
     "react-dropzone": "^14.2.3",
     "tesseract.js": "^5.1.1",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",
